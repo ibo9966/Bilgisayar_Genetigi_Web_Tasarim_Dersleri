@@ -4,8 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Çalışması</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hoş Geldiniz!</h1>
+    <header>
+        <nav>
+            <div>
+                <a href="#">LOGO</a>
+                <a href="register.html">Kayıt Ol</a>
+                <a href="login.html">Giriş Yap</a>
+
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1>Sayfamıza Hoş Geldiniz!</h1>
+        <img src="resimler/hosgeldin.jpg" alt="Hoşgeldiniz" width="250px">
+        <h2>Kategoriler</h2>
+        <ol>
+            <li><a href="#general">Genel</a></li>
+            <li><a href="#developer">Geliştiriciler</a></li>
+            <li><a href="#statistic">İstatistikler</a></li>
+        </ol>
+    </section>
+
+    <section id="general">
+        <h3>Bu Sayfa Web Geliştiricilerin Sayfasıdır!</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quos magnam adipisci, quidem delectus saepe quaerat esse mollitia nesciunt hic animi provident ea! Maxime voluptates quisquam corrupti natus accusamus ducimus?</p>
+        <h4>Biz Kimiz?</h4>
+        <iframe width="750px" height="315" src="https://www.youtube.com/embed/Eg8-4nbb78Q?si=TRoh1nAGc8UeX5yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="developer">
+        <h3>Kayıtlı Web Geliştiriciler</h3>
+        <div>
+            <img src="resimler/avatar.jpg" alt="" width="250px" height="250px">
+            <br>
+            <b>İbrahim KAYATEPE</b>
+            <i>İş Analisti</i>
+            <strong>4.5</strong>
+            <br><br>
+        </div>
+        <div>
+            <img src="resimler/avatarkadın1.jpg" alt="" width="250px" height="250px">
+            <br>
+            <b>Sena KAYATEPE</b>
+            <i>Öğrenci</i>
+            <strong>4.0</strong>
+            <br><br>
+        </div>
+        <div>
+            <img src="resimler/avatarkadın2.jpg" alt="" width="250px" height="250px">
+            <br>
+            <b>Duygu KAYATEPE</b>
+            <i>Başvuru Güvenliği Yetkilisi</i>
+            <strong>5.0</strong>
+            <br>
+        </div>
+    </section>
+
+    <section id="statistic">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sıra No.</th>
+                    <th>İsim</th>
+                    <th>İşi</th>
+                    <th>Puanı</th>
+                    <th>Resmi</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>İbrahim KAYATEPE</td>
+                    <td>İş Analisti</td>
+                    <td>4.5</td>
+                    <td><img src="resimler/avatar.jpg" alt="İbrahimKAYATEPE" width="80px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sena KAYATEPE</td>
+                    <td>Öğrenci</td>
+                    <td>4.0</td>
+                    <td><img src="resimler/avatarkadın1.jpg" alt="SenaKAYATEPE" width="80px"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Duygu KAYATEPE</td>
+                    <td>Başvuru Güvenliği Yetkilisi</td>
+                    <td>5.0</td>
+                    <td><img src="resimler/avatarkadın2.jpg" alt="DuyguKAYATEPE" width="80px"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
