@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Hizalama Örnekleri</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .baslik {
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .flex-alan {
+      display: flex;               /* Flex yapıyı başlatır */
+      flex-direction: row;         /* Yatay dizilim */
+      height: 120px;               /* Görsel olarak fark edilsin diye yükseklik */
+      background-color: #ddd;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .kutu {
+      width: 60px;
+      height: 60px;
+      background-color: #007bff;
+      color: white;
+      display: flex;               /* Kutunun içeriğini ortalamak için */
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .gap { gap: 10px; }
+
+    /* justify-content türleri */
+    .between  { justify-content: space-between; } /* ilk-son kenarda, arası eşit boşluk */
+    .around   { justify-content: space-around; }  /* her kutunun iki yanında boşluk */
+    .evenly   { justify-content: space-evenly; }  /* tüm boşluklar eşit */
+
+    /* align-items türleri */
+    .start    { align-items: flex-start; }  /* dikeyde üste yaslanır */
+    .center   { align-items: center; }      /* dikeyde ortalanır */
+  </style>
+</head>
+<body>
+
+  <div class="baslik">1️⃣ justify-content: space-between (yatay), align-items: center (dikey)</div>
+  <div class="flex-alan between center">
+    <div class="kutu">1</div>
+    <div class="kutu">2</div>
+    <div class="kutu">3</div>
+  </div>
+
+  <div class="baslik">2️⃣ justify-content: space-around (yatay), align-items: center (dikey)</div>
+  <div class="flex-alan around center">
+    <div class="kutu">1</div>
+    <div class="kutu">2</div>
+    <div class="kutu">3</div>
+  </div>
+
+  <div class="baslik">3️⃣ justify-content: space-evenly (yatay), align-items: center (dikey)</div>
+  <div class="flex-alan evenly center">
+    <div class="kutu">1</div>
+    <div class="kutu">2</div>
+    <div class="kutu">3</div>
+  </div>
+
+  <div class="baslik">4️⃣ justify-content: space-evenly (yatay), align-items: flex-start (dikey)</div>
+  <div class="flex-alan evenly start">
+    <div class="kutu">1</div>
+    <div class="kutu">2</div>
+    <div class="kutu">3</div>
+  </div>
+
+</body>
+</html>

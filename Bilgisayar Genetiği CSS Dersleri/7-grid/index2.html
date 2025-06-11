@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Örneği</title>
+  <style>
+    .grid-kapsayici {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 eşit sütun */
+      grid-template-rows: repeat(2, 100px); /* 2 satır, 100px yüksekliğinde */
+      gap: 10px; /* kutular arası boşluk */
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .kutu {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Basit CSS Grid Yapısı</h2>
+
+  <div class="grid-kapsayici">
+    <div class="kutu">1</div>
+    <div class="kutu">2</div>
+    <div class="kutu">3</div>
+    <div class="kutu">4</div>
+    <div class="kutu">5</div>
+    <div class="kutu">6</div>
+  </div>
+
+</body>
+</html>

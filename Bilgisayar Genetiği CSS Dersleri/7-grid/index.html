@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+<body>
+
+    <div class="kapsayici" style="
+        display: grid;
+        grid-template-columns: 100px 100px 100px 500px;
+        ">
+
+        <div style="background-color: red;">kutu1</div>
+        <div style="background-color: yellow;">kutu2</div>
+        <div style="background-color: turquoise;">kutu3</div>
+        <div style="background-color: tomato;">kutu4</div>
+
+    </div>
+
+<!-- Aşağıdaki eşit olmasını istersem 1 fr diye kullanabiliriz.
+ istersek şunuda yapabiliriz. 100px 100px 1fr dersek sadece sonuncu tüm alanı kaplayacaktı
+
+ column gap metodu ile kutularını arasında eşit boşluk bırakılabilir. 
+ ;X ekseninde
+ row gap metodu ile kutulurun arasında eşit boşluk bırakılabilir.
+ ;Y ekseninde
+ -->
+     <div class="kapsayici" style="
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        ">
+
+        <div style="background-color: red; height:200px;">kutu1</div>
+        <div style="background-color: yellow; height:200px;">kutu2</div>
+        <div style="background-color: turquoise; height:200px;">kutu3</div>
+        <div style="background-color: green; height:200px;">kutu1</div>
+        <div style="background-color: brown; height:200px;">kutu2</div>
+        <div style="background-color: pink; height:200px;">kutu3</div>
+
+    </div>
+</body>
+
+</html>
