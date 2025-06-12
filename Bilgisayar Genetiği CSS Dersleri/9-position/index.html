@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        /*
+        position
+        1-static sadece bundan z-index kullanılmıyor
+        2-relative → z-index, absolute
+        3-absolute
+        4-fixed
+        5-sticky
+
+        */
+
+        body{
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 30px;
+        }
+        .big-wrapper{
+            padding: 10px;
+            border: 5px solid red;
+            width: 700px;
+            margin-top: 150px;
+            position: sticky;
+            top: 67px;
+            
+        }
+        .wrapper{
+            border: 5px solid black;
+            width: 600px;
+            position: relative;
+            
+
+        }
+        #box1{
+            background-color: red;
+            position: relative;
+            
+        }
+        #box2{
+
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            /*z-index: 1;*/
+            z-index: 0;
+            right: 0;
+            
+
+        }
+        #box3{
+            background-color: purple;
+            position: relative;
+            /*top: -200px;*/
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: yellowgreen;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">
+                LOGO
+            </h2>
+        <nav class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+            
+            
+        </nav>
+    </header>
+    <div class="big-wrapper">
+        <div class="wrapper">
+                <div class="box" id="box1">Kutu1</div>
+                <div class="box" id="box2">Kutu2</div>
+                <div class="box" id="box3">Kutu3</div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
