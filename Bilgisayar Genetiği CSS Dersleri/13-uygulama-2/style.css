@@ -90,6 +90,27 @@ header i {
   column-gap: 10px;
 }
 
+.header-right .bi-bell{
+  position: relative;
+}
+
+.header-right .bi-bell::after {
+  content: "1";
+  background-color: #ff0000;
+  color: white;
+  font-size: 10px;
+  padding: 4px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -8px;
+}
+
 .header-right .avatar {
   width: 32px;
   height: 32px;
@@ -133,6 +154,14 @@ header i {
 
 .sidebar-item a:hover {
   color: #ff0000 !important;
+}
+
+.sidebar-links .sidebar-item:nth-child(2) a:link {
+  color: red;
+}
+
+.sidebar-links .sidebar-item:nth-child(2) a:focus {
+  color: blue;
 }
 
 /* 
